@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+    <script type="text/javascript">
+        myScope = 'global';
+        /*(function(){
+            var myScope = "function";
+            alert('inside the function, the scope is: ' + myScope);
+        })();
+        alert('outside the function, the scope is: ' + myScope);*/
+        alert('window.myScope '+ window.myScope);
+
+    </script>
+</head>
+<body>
+<h1> Scope </h1>
+</body>
+</html>

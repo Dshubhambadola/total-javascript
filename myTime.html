@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTime</title>
+    <script type="text/javascript">
+        var rightNow = new Date();
+        var currentHour = rightNow.getHours();
+        switch (true){
+            case (currentHour > 8 && currentHour <12):
+                document.write('Morning Sunshine');
+                break;
+            case (currentHour === 12):
+                document.write('lunch Time');
+                break;
+            case (currentHour > 12 && currentHour < 23):
+                document.write('Take a break');
+                break;
+            default:
+                document.write('hard worker');
+                break;
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

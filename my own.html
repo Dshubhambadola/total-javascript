@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script type="text/javascript">
+        function shubham() {
+            var myValue = document.getElementById('MyName').value;
+            if(myValue.length == 0){
+                    alert('Please give some value');
+                return;
+        }
+        var myid = document.getElementById('Myid');
+        myid.innerHTML = myValue;
+        }
+    </script>
+
+
+</head>
+<body>
+<h1 id="Myid">My own script</h1>
+<input type="text" id="MyName"/>
+<input type="submit" value="ClickMe" onclick="shubham()"/>
+
+</body>
+</html>
